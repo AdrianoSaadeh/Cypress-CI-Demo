@@ -12,7 +12,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.get('.success').should('be.visible')
     
         cy.tick(3000)
-        cy.get('.success').should('not.be.visible')
+        cy.get('.success').should('not.visible')
     })
 
     Cypress._.times(5, function() {
