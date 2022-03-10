@@ -12,13 +12,13 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.get('.success').should('be.visible')
     
         cy.tick(3000)
-        cy.get('.success').should('not.visible')
+        cy.get('.success').should('not.be.visible')
     })
 
     Cypress._.times(5, function() {
         it('testa a página da política de privavidade 3x usando o loadash', function() {
             cy.visit('./src/privacy.html')
-            cy.contains('Cypress Automation Testing').should('be.visible')
+            cy.contains('Cypress Automation failed').should('be.visible')
         })
     })
    
