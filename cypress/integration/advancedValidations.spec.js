@@ -18,7 +18,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     Cypress._.times(5, function() {
         it('testa a página da política de privavidade 3x usando o loadash', function() {
             cy.visit('./src/privacy.html')
-            cy.contains('Cypress Automation failed').should('be.visible')
+            cy.contains('Cypress Automation Testing').should('be.visible')
         })
     })
    
